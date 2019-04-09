@@ -2,6 +2,6 @@
 
 ### Rivka Revivo - 208736827
 
-### Natali Almog - 205946221
+### Natalie Almog - 205946221
 
 
