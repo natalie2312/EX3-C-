@@ -2,7 +2,7 @@
 #include <stdexcept>
 #include <iostream>
 #include <cmath>
-//Made by: Liad Cohen & Timor Sharabi.
+
 
 using namespace std;
 using namespace ariel;
@@ -33,9 +33,9 @@ double PhysicalNumber::translateOther(const PhysicalNumber& other){
                 break;
             }
     }
-    return -1; //never gets here.
+    return -1; 
 };
-PhysicalNumber& PhysicalNumber::operator++(){ //prefix - should be fixed
+PhysicalNumber& PhysicalNumber::operator++(){ 
     ++units;
     return *this;
 };
@@ -46,7 +46,7 @@ PhysicalNumber PhysicalNumber::operator++(int){
     return old;
 };
 
-PhysicalNumber& PhysicalNumber::operator--(){//prefix - should be fixed
+PhysicalNumber& PhysicalNumber::operator--(){
     --units;
     return *this;
 };
@@ -59,9 +59,9 @@ PhysicalNumber PhysicalNumber::operator--(int){
 
 PhysicalNumber PhysicalNumber::operator+(const PhysicalNumber& other){ return PhysicalNumber(this->units+translateOther(other), this->typeID); }; //add units same world
 
-PhysicalNumber PhysicalNumber::operator-(const PhysicalNumber& other){ return PhysicalNumber(this->units-translateOther(other), this->typeID); }; //decrease units same world
+PhysicalNumber PhysicalNumber::operator-(const PhysicalNumber& other){ return PhysicalNumber(this->units-translateOther(other), this->typeID); }; 
 
-PhysicalNumber& PhysicalNumber::operator+=(const PhysicalNumber& other){ //adding  +=
+PhysicalNumber& PhysicalNumber::operator+=(const PhysicalNumber& other){ 
     setUnits(this->units + translateOther(other));
     return *this;
 };
@@ -71,7 +71,7 @@ PhysicalNumber& PhysicalNumber::operator-=(const PhysicalNumber& other){
     return *this;
 };
 
-PhysicalNumber& PhysicalNumber::operator+(){ return *this; }; //unary plus
+PhysicalNumber& PhysicalNumber::operator+(){ return *this; }; 
 
 PhysicalNumber PhysicalNumber::operator-(){ return PhysicalNumber(-this->units, this->typeID); };
 
