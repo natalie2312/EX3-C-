@@ -1,8 +1,10 @@
 #pragma once
 namespace ariel{
 
-  enum class Unit{
-    CM,G,SEC,M,KG,MIN,KM,TON,HOUR
+  enum Unit{
+    CM,G,SEC,   // mod 3= 0,1,2
+    M,KG,MIN,   
+    KM,TON,HOUR
   };
 
 }
