@@ -173,7 +173,6 @@
 #include <iostream>
 #include <regex>
 #include <cmath>
-//Made by: Liad Cohen & Timor Sharabi.
 
 using namespace std;
 using namespace ariel;
